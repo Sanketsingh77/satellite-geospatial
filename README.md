@@ -90,13 +90,14 @@ satellite-geospatial-dl/
 │   ├── raw/                  
 │   ├── processed/            
 │   ├── images/               
-│   └── masks/                
-│
+│   └── masks/       
+|         
+│__ docs/
+|   └── images/
+|
 ├── notebooks/
 │   └── 01_satellite_image_exploration.ipynb
-│
-├── outputs/                  
-├── src/                      
+│                                  
 ├── .gitignore
 └── README.md
 ```
