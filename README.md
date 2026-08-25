@@ -2,9 +2,6 @@
 
 Reproduction of the geospatial preprocessing workflow described in Fractal AI's article, **[Understanding Satellite Image for Geo-spatial Deep Learning](https://medium.com/@fractal.ai/understanding-satellite-image-for-geo-spatial-deep-learning-a1a7dee2f2de)**.
 
-The project uses the **Open Cities AI Challenge** building-segmentation dataset to prepare high-resolution aerial imagery and building-footprint annotations for a downstream segmentation model.
-
-> **Scope:** This repository implements the preprocessing workflow demonstrated in the article. It does **not** train or evaluate a segmentation model.
 
 ## Objective
 
@@ -41,7 +38,6 @@ Dataset source:
 - DrivenData competition: https://www.drivendata.org/competitions/60/building-segmentation-disaster-resilience/
 - Dataset DOI: https://doi.org/10.34911/rdnt.f94cxb
 
-The dataset is publicly available and is licensed under ODbL-1.0 according to the Source Cooperative dataset page.
 
 ### Input scene
 
@@ -58,7 +54,6 @@ The dataset is publicly available and is licensed under ODbL-1.0 according to th
 - **4,439** building-footprint features
 - Building polygons represented as GeoJSON features
 
-> The raw dataset is intentionally excluded from Git because the source TIFF is large and the generated tile directories contain hundreds of files.
 
 ## Results
 
@@ -89,23 +84,21 @@ The final preprocessing stage produces:
 satellite-geospatial-dl/
 │
 ├── data/
-│   ├── raw/                  # Original TIFF + GeoJSON (not tracked by Git)
-│   ├── processed/            # Resampled image + generated mask
-│   ├── images/               # 1024×1024 image tiles
-│   └── masks/                # 1024×1024 mask tiles
+│   ├── raw/                  
+│   ├── processed/            
+│   ├── images/               
+│   └── masks/                
 │
 ├── notebooks/
 │   └── 01_satellite_image_exploration.ipynb
 │
-├── outputs/                  # Optional generated visualizations
-├── src/                      # Space for reusable Python code
+├── outputs/                  
+├── src/                      
 ├── .gitignore
 └── README.md
 ```
 
 ## Requirements
-
-The project was developed in **Ubuntu WSL** using Python and GDAL.
 
 Recommended environment:
 
