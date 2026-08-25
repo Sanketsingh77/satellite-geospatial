@@ -78,6 +78,9 @@ The final preprocessing stage produces:
 - **754 matching mask tiles**
 - tile size: **1024×1024**
 
+
+> The raw dataset is intentionally excluded from Git because the source TIFF is large and the generated tile directories contain hundreds of files.
+
 ## Project Structure
 
 ```text
