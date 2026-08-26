@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+pillow
+tqdm
+fastcore
+rasterio
+geopandas
+shapely
+jupyter
+ipykernel
+scikit-learn
+torch
+segmentation-models-pytorch

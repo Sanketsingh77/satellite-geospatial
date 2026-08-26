@@ -3,9 +3,19 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
+# Large geospatial data and generated tiles
 data/raw/
 data/processed/
 data/images/
 data/masks/
+data/unseen/
 
+# Local/Kaggle transfer artifacts
+kaggle_upload/
+*.zip
+
+# Model checkpoints and transient outputs
+*.pth
+*.pt
+models/
 outputs/
